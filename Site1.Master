@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="StateMgmt.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <h1>IBM</h1>
+            <h4>Big Blue</h4>
+        </header>
+        <section>
+            <nav>
+            <ul>
+            <li><a href="Page1.aspx">Employee Home</a></li>
+            <li><a href="Page2.aspx">Trainee Home</a></li>
+            <li><a href="Page3.aspx">Attendance</a></li>
+            </ul>
+        </nav>
+            </section>
+       
+        <section>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </section>
+        <footer>
+  <p>MultiNational Corporation</p>
+</footer>
+    </form>
+</body>
+</html>
